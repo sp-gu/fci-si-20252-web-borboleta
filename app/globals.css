@@ -19,8 +19,274 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+header{
+    background-color: #D49EC5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+header h2{
+    color: #463973;
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: left;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    gap: 50px;
+}
+
+nav ul li a{
+    color: #473668;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*TOPO SITE*/
+
+.topo-site{
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.topo-site h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    color: #473668;
+}
+
+.topo-site h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: #473668;
+}
+
+#saiba-mais{
+    background-color: #FEB5C9;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+#saiba-mais:hover{
+    background-color: #463973;
+
+}
+
+#saiba-mais a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #463973;
+    transition: 0.5s ease;
+}
+
+#saiba-mais a:hover{
+    color: #FEB5C9;
+}
+
+/*PRODUTOS EM DESTAQUE*/
+
+.produtos-destaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    background-color: #FEB5C9;
+}
+
+.produtos-destaque h1{
+    padding: 50px;
+    font-family: "Libertinus Keyboard", system-ui;
+    font-size: 40px;
+    color: #463973;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#produtos .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #d49ec5;
+    padding: 10px;
+}
+
+#produtos img{
+    width: 200px;
+    height: 200px;
+}
+
+/*Parallax*/
+
+.parallax{
+width: 100%;
+height: 250px;
+text-align: center;
+padding: 40px 4%;
+
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+/*MISSAO, VISÃO E VALORES DA ONG*/
+
+.mvv{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 50px;
+    gap: 30px;
+    background-color: #AFD9A9;
+    text-align: center;
+}
+
+.missao, .visao, .valores{
+    background-color: #BBF2AC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    transition: 0.2s ease-in;
+}
+
+.missao:hover, .visao:hover, .valores:hover{
+    transform: scale3d(1, 1, 1.1);
+    box-shadow: 10px 10px 5px #555555;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #463973;
+    color: white;
+}
+
+.rodape h4, p{
+    font-size: 20px;
+}
+
+.rodape article{
+    padding: 50px;
+}
+
+.rodape h4, p{
+    font-size: 20px;
+}
+
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .topo-site {
+        height: auto;
+        padding: 30px 10px;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .topo-site h1 {
+        font-size: 32px;
+    }
+
+    .topo-site h2 {
+        font-size: 20px;
+    }
+
+    #saiba-mais {
+        width: 30%;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .produtos-destaque {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .produtos-destaque h1{
+        text-align: center;
+        font-size: 200%;
+    }
+
+    #produtos {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    #produto img {
+        width: 90vw;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .mvv {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .rodape article,
+    .middle iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .middle iframe {
+        height: 180px;
+    }
+
+    .left-side{
+        margin: 10px 10px;
+    }
 }
