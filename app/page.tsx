@@ -4,23 +4,21 @@ import Header from "./components/Header";
 export default function Home() {
   return (
     <body>
-    <Header />
+        <Header />
 
-    <section className="topo-site"> 
-        <h1>Conheça o bazar Heleninha</h1>
-        <h2>Bazar beneficente</h2>
-     
-        <button id="saiba-mais">
-            <a href="#">Saiba mais!</a>
-        </button>
-    </section>
-
-    <section className="produtos-destaque">
-        <h1>Produtos em Destaque</h1>
-        <article id="produtos">
+        <section className="topo-site"> 
+            <h1>Conheça o bazar Heleninha</h1>
+            <h2>Bazar beneficente</h2>
             
-        </article>
-    </section>
+            <button id="saiba-mais">
+                <a href="#">Saiba mais!</a>
+            </button>
+        </section>
+
+        <section className="produtos-destaque">
+            <h1>Produtos em Destaque</h1>
+            <article id="produtos"></article>
+        </section>
 
     <section className="parallax"> </section>
 
@@ -51,6 +49,6 @@ export default function Home() {
             </article>
         </section>
     </footer>
-</body>
+    </body>
   );
 }
