@@ -4,7 +4,15 @@ import Destino from "./components/destino/destino";
 
 export default function Home() {
 
-    const destino = { id: "1", nome: "batata" }
+    const destinos = [
+        {id: 'calca', nome: 'Calça', caminhoImagem: '/imagens/calca.jpg'},
+        {id: 'saia', nome: 'Saia', caminhoImagem: '/imagens/saia.jpg'},
+        {id: 'blusa', nome: 'Blusa', caminhoImagem: '/imagens/blusa.jpg'},
+        {id: 'salto', nome: 'Salto', caminhoImagem: '/imagens/salto.jpg'},
+        {id: 'colar', nome: 'Colar', caminhoImagem: '/imagens/colar.jpg'},
+        {id: 'brinco', nome: 'Brinco', caminhoImagem: '/imagens/brinco.jpg'}
+    ];
+
   return (
     <body>
         <Header />
