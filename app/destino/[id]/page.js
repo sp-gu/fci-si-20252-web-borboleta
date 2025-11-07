@@ -36,6 +36,16 @@ export default function DestinoPage({ params }) {
     }
 
    return (
+
+    /* <section className={styles.sectionMain}>
+            <h2> {destino.nome} </h2>
+
+            <Image className={styles.imagem} src={destino.caminhoImg} alt={destino.descricao} width={500} height={350}/>
+
+            <p className={styles.descricao}> {destino.descricao} </p>
+        
+    </section>  */
+
     <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f7f6; color: #333; display: grid; place-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box;">
 
     <main style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07); padding: 2rem 2.5rem; max-width: 550px; width: 100%; text-align: center; border: 1px solid #e0e0e0;">
