@@ -50,7 +50,10 @@ Inicialmente, o css foi migrado quase que inteiramente no 'global.css', mas fare
 
 CHECK-IN 2
 
-.
+A rota dinâmica foi implementada usando itens que se alinham com as atividades do bazar: roupas femininas. 
+Há problemas no código que impedem a exibição da página após o redirecionamento (o produto selecionado); um código p/ tratamento de erro foi implementado e a página de "NotFound" é exibida ao invés da tela vermelha de erros. Ainda assim, o ato de redirecionar o usuário à nova página está em pleno funcionamento.
+
+Houveram alterações pontuais no design da página index.
 
 -----
 
