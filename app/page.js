@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/Header";
 import Destino from "./components/destino/destino";
 
@@ -6,7 +5,7 @@ export default function Home() {
 
     const destinos = [
         {id: 'calca', nome: 'Calça', caminhoImagem: '/imagens/calca.jpg'},
-        {id: 'saia', nome: 'Saia', caminhoImagem: '/imagens/saia.jpg'},
+        {id: 'saia', nome: 'Saia', caminhoImagem: '/imagens/saia.jpeg'},
         {id: 'blusa', nome: 'Blusa', caminhoImagem: '/imagens/blusa.jpg'},
         {id: 'salto', nome: 'Salto', caminhoImagem: '/imagens/salto.jpg'},
         {id: 'colar', nome: 'Colar', caminhoImagem: '/imagens/colar.jpg'},
@@ -28,7 +27,13 @@ export default function Home() {
 
         <section className="produtos-destaque">
             <h1>Produtos em Destaque</h1>
-            <Destino key={destino.id}  destino={destino}/>
+            <article id="map">
+                {
+                destinos.map(destino => (
+                    <Destino key={destino.id} destino={destino}/>
+                ))
+                }
+            </article>
         </section>
 
     <section className="parallax"> </section>
@@ -36,15 +41,15 @@ export default function Home() {
     <section className="mvv">
         <article className="missao">
             <h2>Missão</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod  .</p>
+            <p>Texto demonstrativo. </p>
         </article>
         <article className="visao">
             <h2>Visão</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <p>Texto demonstrativo.</p>
         </article>
         <article className="valores">
             <h2>Valores</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <p>Texto demonstrativo.</p>
         </article>
     </section>
 
