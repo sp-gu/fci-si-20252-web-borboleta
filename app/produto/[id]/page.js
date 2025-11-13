@@ -1,11 +1,17 @@
+//"use client"
 import { notFound } from 'next/navigation';
 import Image from "next/image";
 
+//remover async abaixo após implementar o client side
 export default async function DestinoPage({ params }) {
     // 1. Pega o ID da URL
     const { id } = await params;
 
     let produto;
+
+    //trocar para useEffect
+    //trocar para clientSide
+    //passar o try/catch para dentro do useEffect
 
     try {
         // 2. Busca esse ID específico na API
