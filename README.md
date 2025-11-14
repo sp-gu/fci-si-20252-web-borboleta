@@ -59,7 +59,11 @@ Houveram alterações pontuais no design da página index.
 
 CHECK-IN 3
 
-.
+Foi implementado o código para a chamade de API usando fetch que foi ensinado em aula. Além disso, a API que foi implementada é client-side, ou seja, ela é carregada pelo lado do cliente, onde chamamos ela por meio do 'use client' em next e por meio do 'useEffect' para poder ser renderizada. 
+
+Além disso, para a implementação correta da API, foram modificadas alguns arquivos .js, mudando tanto seu código, quanto também a estrutura de arquivos na pasta, para que a chamada da API não desse problema, puxando das devidas pastas e seguindo padrões e boas práticas do desenvolvimento com Next.js.
+
+Algumas alterações pontuais de design também foram aplicadas.
 
 -----
 
